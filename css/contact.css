@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	display: block;
+}
+
+#contactinfo {
+	text-align: center;
+}
+
+#game {
+	margin: 0 auto;
+}
+
+#row1 {
+}
+
+#row2 {
+}
+
+#row3 {
+}
+
+#box1 {}
+#box2 {}
+#box3 {}
+#box4 {}
+#box5 {}
+#box6 {}
+#box7 {}
+#box8 {}
+#box9 {}
+#moving {
+	position: relative;
+	background-color: #ff0000;
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 2px solid #ffffff;
+}
+
+#resetButton {
+	margin-top: 10px;
+}
+
+.box {
+	background-color: #ff0000;
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 2px solid #ffffff;
+}
+
+#winner {
+	display: none;
+}
+
+li:nth-child(5) a {
+	color: #f60;
+}

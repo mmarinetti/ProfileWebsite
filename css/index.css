@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#welcome {
+	margin: 10px auto;
+}
+
+#welcomecontent {
+	margin-left: 10%;;
+	margin-right: 10%%;
+}
+
+#welcomecontent p {
+	margin-bottom: 20%;
+}
+
+#profilepicture {
+	width: 20%;
+	height: 20%;
+	margin-right: 20px;
+	float: left;
+	margin-bottom: 30px;
+}

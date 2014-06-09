@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Michael Marinetti</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/contentdisplay.js"></script>
+        <script src="js/mobilenavdisplay.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <ul id="navigationbar">
+        	<li><h1 id="name">Michael Marinetti</h1></li>
+            <li><a class="navtext" href="index.html">Home</a></li>
+            <li><a class="navtext" href="#">Portfolio</a></li>
+            <li><a class="navtext" href="skills.html">Skills</a></li>
+            <li><a class="navtext" href="resume.html">Resume</a></li>
+            <li><a id="menu" href="#">Menu</a></li>
+            <!--<li><a class="navtext" href="contact.html">Contact Me</a></li>-->
+        </ul>
+        
+        <ul id="mobilenavbar">
+        	<li><a class="navtext" href="index.html">Home</a></li>
+            <li><a class="navtext" href="#">Portfolio</a></li>
+            <li><a class="navtext" href="skills.html">Skills</a></li>
+            <li><a class="navtext" href="resume.html">Resume</a></li>
+        </ul>
+        
+        <h2>Projects</h2>
+        
+        <div class="portfolio">
+        	<img id="flightsimulator" src="img/flightsimulatorsuite.png" />
+        	<img id="spacegame" src="img/spacegame.png" />
+            <img id="celshaded" src="img/cel-shaded-torus.png" />
+        </div>
+        
+        <div id="content">
+        	<div id="flightsimulatorcontent">
+            	<h3>Flight Simulator Suite</h3>
+            	<video id="flightsimvideo" controls>
+                	<source src="video/BoeingPresentationMP4.mp4" />
+                    <source src="video/BoeingPresentationWM.wmv" />
+                </video>
+        		<p><a href="http:www.flightgear.org">FlightGear</a> is an open source cross platform flight simulator. It has been in development for many years and has accumulated many rich features. Some of these features include being able to fly many aircraft, exploring locations around the globe, and experiencing a hyper realistic simulation of aviation. The goal of this project was to build upon FlightGear. We added functionalities including a new wxPython GUI and a message queuing subsystem within FlightGear to communicate with the GUI. The primary challenge of this project was safely adding custom components to a complex piece of existing software. Each part of the project involved a deep understanding of the relevant portions of code. The new GUI was built using wxPython. The reason behind choosing Python is simply because Python is such an easy language to understand and write, thereby making it easier for future developers of this project to build upon what we have created with more ease. The wxPython GUI library was chosen because it is a community favorite and has much support on the web. The message queuing subsystems within FlightGear were implemented using ActiveMQ. ActiveMQ uses a broker to mediate the communication between multiple processes. It also has libraries written in C++ and Python which we used to connect FlightGear and the GUI to the broker. My role in this project was implementing the message producer and consumer subsystems within FlightGear and making sure that FlightGear and the Python GUI would be able to connect to the broker.</p>
+			</div>
+            <div id="spacegamecontent">
+            	<h3>Space Game</h3>
+				<p>This game involves flying in a spaceship through an asteriod field. Your score increases the longer you survive. To survive, avoid hitting the ceiling, floor, and all the asteroids that come your way. Occasionally a power-up(a green square) will spawn. Flying over a power-up will increase your ship's speed while making you invunerable to asteroids. Your speed is increased for the duration but the invunerablility lasts for an additional two seconds. The power-ups do not make you invunerable to the floor and ceiling however. Aquiring the power-up also increases your score multiplier for the duration of the power-up. The game will also keep track of your high score. This game was developed using C#, DirectX, and Visual Studio. View this project on <a href="https://github.com/mmarinetti/HelicopterGame">GitHub</a>.</p>
+            </div>
+            <div id="celshadedcontent">
+            	<h3>Cel Shader</h3>
+            	<p>This application applies the cel-shaded effect to object models. The user can also load their own object files. The application was developed using C++, OpenGL, and Visual Studio. View this project on <a href="https://github.com/mmarinetti/Cel-Shader">GitHub</a>.</p>
+            </div>
+        </div>
+        
+        <h2>Awards</h2>
+        
+        <div id="gmAward">
+        	<img src="img/holdingaward.png" />
+            <h3>General Motors Praxis Award</h3>
+            <p>"One of the hallmarks of CSE 498 capstone projects is that of praxis, the process of putting theoretical knowledge into practice. Teams apply a wide variety of information technologies to produce solutions to complex problems in areas such as business, engineering, computing, and science. The CSE capstone team that engineers the software system that is the most technically challenging is recognized with the General Motors Praxis Award, which is sponsored by General Motors of Detroit, Michigan." This award was given to my team for the Flight Simulator Suite project, which you can read about above.</p>
+        </div>
+        
+        <footer>
+        	<p>Need to contact me? Send me an email at: <a href="mailto:mmarinetti92@gmail.com">mmarinetti92@gmail.com</a><br/>
+        	Also visit these sites!<br/>
+            <a href="https://github.com/mmarinetti/" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/pub/michael-marinetti/98/474/aa7" target="_blank">LinkedIn</a></p>
+        </footer>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+       <!-- <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+    </body>
+</html>

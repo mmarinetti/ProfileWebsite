@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+	background-color: black;
+	text-align: center;
+	width: 90%;
+	margin: 40px auto;
+	color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.skill {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.skill img {
+	float: left;
+	margin-right: 20px;
+	width: 20%;
+	height: 20%;
+}
+
+.skill p {
+	margin-bottom: 17%;
+}
+
+#lastskill {
+	margin-bottom: 15%;
+}

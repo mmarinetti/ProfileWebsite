@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+
+iframe {
+	width: 100%;
+	height: inherit;
+	margin: 0 auto;
+	height: 80%;
+}
+
+#download {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+li:nth-child(5) a {
+	color: #f60;
+}
+
+@media (max-width: 780px) {
+	li:nth-child(4) a {
+		color: #f60;
+	}
+}
