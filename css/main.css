@@ -98,26 +98,38 @@ textarea {
    ========================================================================== */
 
 body {
+	height: 100%;
 	background-color: #fa;
 	text-align: center;
 }
 
+h2 {
+	background-color: #1a1a1a;
+	text-align: center;
+	width: 90%;
+	margin: 40px auto;
+	color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
 #navigationbar {
-	background-color: #424242;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #1a1a1a;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	list-style: none;
-	
-	background: #6b6b6b; /* Old browsers */
-	background: -moz-linear-gradient(top,  #6b6b6b 0%, #000000 30%, #000000 70%, #6b6b6b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b6b6b), color-stop(30%,#000000), color-stop(70%,#000000), color-stop(100%,#6b6b6b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#6b6b6b',GradientType=0 ); /* IE6-9 */
+	z-index: 10;
+	text-align: right;
+}
+
+#lastNav {
+	margin-right: 40px;
 }
 
 .navtext {
@@ -137,9 +149,8 @@ body {
 	color: #f60;
 }
 
-ul {
-	text-align: right;
-	padding-right: 50px;
+navigationbar ul, mobilenavbar ul {
+	/*padding-right: 50px;*/
 }
 
 ul li {
@@ -158,18 +169,21 @@ ul li {
 	float: left;
 }
 
-footer {
-	clear: both;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 15%;
-	background-color: #e8e8e8;
-	padding-top: 10px;
+#container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -8em; /* the bottom margin is the negative value of the footer's height */
 }
 
-footer p {
-	text-align: center;
+footer, .push {
+	height: 8em; /* .push must be the same height as .footer */
+}
+
+footer {
+	margin-top: 40px;
+	padding-top: 10px;
+	background-color: #e8e8e8;
 }
 
 #mobilenavbar {
@@ -180,14 +194,7 @@ footer p {
 	padding-bottom: 10px;
 	list-style: none;
 	
-	background: #6b6b6b; /* Old browsers */
-	background: -moz-linear-gradient(top,  #6b6b6b 0%, #000000 30%, #000000 70%, #6b6b6b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b6b6b), color-stop(30%,#000000), color-stop(70%,#000000), color-stop(100%,#6b6b6b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #6b6b6b 0%,#000000 30%,#000000 70%,#6b6b6b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#6b6b6b',GradientType=0 ); /* IE6-9 */
+	background: #1a1a1a;
 }
 #mobilenavbar a {
 	text-decoration: none;
@@ -322,22 +329,27 @@ footer p {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media (max-width: 780px) {
+@media (max-width: 970px) {
 	.navtext {
 		display: none;
 	}
 	
 	#menu {
 		display: inline-block;
+		margin-right: 80px;
 	}
 	
 	#mobilenavbar {
 		display: block;
+		position: relative;
 	}
 	
 	#mobilenavbar .navtext {
-		/*display: block;*/
 		text-align: center;
+	}
+	
+	#navigationbar {
+		position: relative;
 	}
 }
 

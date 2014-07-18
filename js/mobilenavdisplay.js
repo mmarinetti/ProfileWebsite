@@ -14,11 +14,9 @@ $(document).ready(function(e) {
 		if($(window).width() < 480) {
 			$("#navigationbar h1").css("display", "none");
 			$("#menu").text("Michael Marinetti");
-			$("#navigationbar").css("text-align", "center");
 		} else {
 			$("#navigationbar h1").css("display", "inline");
 			$("#menu").text("Menu");
-			$("#navigationbar").css("text-align", "right");
 		}
 	};
 	

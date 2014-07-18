@@ -1,33 +1,103 @@
 @charset "utf-8";
 /* CSS Document */
 
-h2 {
-	background-color: black;
-	text-align: center;
+#skillscontainer {
+	background-color: #e6e6e6;
 	width: 90%;
-	margin: 40px auto;
-	color: white;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+	margin: 0 auto;
+}
+
+#skillscontainer table {
+	margin: 0 auto;
+}
+
+#skillscontainer table table tr {
+	line-height: 60px;
+	text-align: right;
+}
+
+.skillsgraphcontainer {
+	width: 400px;
+	height: 250px;
+	background: url(../img/graph_background.jpg);
+}
+
+.skillsgraphcontainer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.skillsgraphcontainer li {
+	width: 30px;
+	height: 250px;
+	margin: 0 22px;
+	position: relative;
+	float: left;
+}
+
+.skillsgraphcontainer li a {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0;
 }
 
 .skill {
-	margin-left: 10%;
-	margin-right: 10%;
+	background: #ffff00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffff00 0%, #585e35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#585e35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffff00 0%,#585e35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffff00 0%,#585e35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffff00 0%,#585e35 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffff00 0%,#585e35 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#585e35',GradientType=0 ); /* IE6-9 */
 }
 
-.skill img {
-	float: left;
-	margin-right: 20px;
-	width: 20%;
-	height: 20%;
+.skillsgraphcontainer li a:hover {
+	background-color: #F30;
 }
 
-.skill p {
-	margin-bottom: 17%;
+.skillsgraphcontainer li a[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
 }
 
-#lastskill {
-	margin-bottom: 15%;
+.skill-label {
+	color: white;
+	margin: 220px 0 0 15px;
+	padding: 0;
+}
+
+.tabletext {
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	
+	border-left: 13px solid #000;
 }

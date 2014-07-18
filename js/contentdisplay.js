@@ -1,10 +1,11 @@
-// JavaScript Document
+/*************************************************************
+	TODO: 
+*************************************************************/
 $(document).ready(function(e) {
 	var simSelected = false;
 	var spaceGameSelected = false;
 	var celShaderSelected = false;
-	
-	$("#flightsimulator").click(function(e) {
+	var showFlightGear = function(frame) {
 		simSelected = !simSelected;
 		spaceGameSelected = false;
 		celShaderSelected = false;
@@ -12,12 +13,24 @@ $(document).ready(function(e) {
 		if(simSelected)
         	$("#flightsimulatorcontent").css("display", "inline-block");
 		else
+		{
 			$("#flightsimulatorcontent").css("display", "none");
+			document.getElementById("flightsimvideo").pause();
+		}
 		$("#spacegamecontent").css("display", "none");
 		$("#celshadedcontent").css("display", "none");
-		$(this).css("border-color", "#F60");
+		$(frame).css("border-color", "#F60");
 		$("#spacegame").css("border-color", "#fff");
 		$("#celshaded").css("border-color", "#fff");
+	};
+	
+	$("#flightsimulator").click(function(e) {
+		showFlightGear(this);
+    });
+	
+	$("#link-to-flightgear-project").click(function(e) {
+		simSelected = false;
+        showFlightGear($("#flightsimulator"));
     });
 	
 	$("#flightsimulator").hover(function(e) {

@@ -37,11 +37,12 @@
 h3 {
 	margin-bottom: 0px;
 	margin-top: 0px;
-	padding-top: 0px;
+	padding-top: 20px;
 }
 
 #flightsimulatorcontent p {
 	margin-top: 50px;
+	text-align: left;
 }
 
 #flightsimvideo {}
@@ -56,42 +57,65 @@ h3 {
 	background-color: #e6e6e6;
 }
 
+#spacegamecontent p {
+	text-align: left;
+}
+
 #celshadedcontent {
 	padding-bottom: 10px;
 	display: none;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: #e6e6e6;
 }
 
-h2 {
-	background-color: black;
-	text-align: center;
-	width: 90%;
-	margin: 40px auto;
-	color: white;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+#celshadedcontent p {
+	text-align: left;
 }
 
 #gmAward {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 15%;
+	background-color: #e6e6e6;
+	width: 90%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	height: 250px;
 }
 
 #gmAward img {
 	float: left;
+	padding-left: 5%;
 	margin-right: 20px;
-	width: 13%;
-	height: 13%;
+	margin-top: 30px;
+	width: 100px;
+	height: 200px;
+}
+
+#gmAward p {
+	text-align: left;
+	padding-right: 5%;
+	padding-left: 5%;
+	background-color: #e6e6e6;
+}
+
+@media (max-width: 619px) {
+	#gmAward {
+		margin-bottom: 80px;
+	}
+}
+
+@media (max-width: 540px) {
+	#gmAward {
+		margin-bottom: 120px;
+	}
 }
 
 @media (max-width: 780px) {
 	#gmAward img {
-		width: 25%;
-		height: 25%;
+		width: 85px;
+		height: 175px;
 	}
 }
 

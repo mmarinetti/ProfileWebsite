@@ -16,12 +16,14 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="css/experience.css">
         <link rel="stylesheet" type="text/css" href="css/skills.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/contentdisplay.js"></script>
         <script src="js/mobilenavdisplay.js"></script>
+        <script src="js/graph.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -29,29 +31,75 @@
         <![endif]-->
         
         <!--<div id="loadHeader"></div>-->
+        
+        <!-------------------------------------------------------
+        	NAVIGATION BARS
+        --------------------------------------------------------->
 
         <ul id="navigationbar">
         	<li><h1 id="name">Michael Marinetti</h1></li>
             <li><a class="navtext" href="#welcome">Home</a></li>
-            <li><a class="navtext" href="#projects">Portfolio</a></li>
             <li><a class="navtext" href="#skills">Skills</a></li>
-            <li><a class="navtext" href="resume.html">Resume</a></li>
+            <li><a class="navtext" href="#projects">Portfolio</a></li>
+            <li><a class="navtext" href="#experience">Experience</a></li>
+            <li><a class="navtext" id="lastNav" href="img/Resume.pdf">Resume</a></li>
             <li><a id="menu" href="#">Menu</a></li>
-            <!--<li><a class="navtext" href="contact.html">Contact Me</a></li>-->
         </ul>
         
         <ul id="mobilenavbar">
         	<li><a class="navtext" href="#welcome">Home</a></li>
-            <li><a class="navtext" href="#projects">Portfolio</a></li>
             <li><a class="navtext" href="#skills">Skills</a></li>
-            <li><a class="navtext" href="resume.html">Resume</a></li>
+            <li><a class="navtext" href="#projects">Portfolio</a></li>
+            <li><a class="navtext" href="#experience">Experience</a></li>
+            <li><a class="navtext" href="img/Resume.pdf">Resume</a></li>
         </ul>
+        
+        <div id="container">
+        
+        <!-------------------------------------------------------
+        	WELCOME
+        --------------------------------------------------------->
         
         <h2 id="welcome">Welcome to my site!</h2>
         <div id="welcomecontent">
-        	<img id="profilepicture" src="img/profilepic.jpg" alt="My big picture should go here." width="523" height="617" />
-        	<p>Hello! My name is Michael Marinetti and I am currently a senior at Michigan State University majoring in Computer Science Engineering. I am also currently working for the MSU IT Department as a summer intern. I have a passion for programming and learning more about my field. Seeing what we can do with today's technology fascinates me and is a big reason why I chose my field of study. I can't wait to see what we will consider normal in the future. Some of my other interests include video gaming and baseball. Go Tigers! Thank you for taking the time to check out my page.</p>
+            <img id="profilepicture" src="img/profilepic.jpg" alt="My big picture should go here." width="523" height="617" />
+            <p>Hello! My name is Michael Marinetti and I am currently a senior at Michigan State University majoring in Computer Science Engineering. I am also currently working for the MSU IT Department as a summer intern. I have a passion for programming and learning more about my field. Seeing what we can do with today's technology fascinates me and is a big reason why I chose my field of study. I can't wait to see what we will consider normal in the future. Some of my other interests include video gaming and baseball. Go Tigers! Thank you for taking the time to check out my page.</p>
         </div>
+        
+        <!-------------------------------------------------------
+        	SKILLS
+        --------------------------------------------------------->
+        <h2 id="skills">Skills</h2>
+        <div id="skillscontainer">
+        <table>
+            <tr>
+                <td>
+                <table>
+                    <tr><td><span class="tabletext">Mastered</span></td><td><div class="arrow-right"></div></td></tr>
+                    <tr><td><span class="tabletext">Experienced</span></td><td><div class="arrow-right"></div></td></tr>
+                    <tr><td><span class="tabletext">Kinda Know What I'm Doing</span></td><td><div class="arrow-right"></div></td></tr>
+                    <tr><td><span class="tabletext">Dabbled</span></td><td><div class="arrow-right"></div></td></tr>
+                    <tr><td><span class="tabletext">Unexperienced</span></td><td><div class="arrow-right"></div></td></tr>
+                </table>
+                </td>
+                <td>
+                    <div class="skillsgraphcontainer">
+                        <ul>
+                            <li><a id="c-skill" class="skill" href="#" title="C++"></a><p class="skill-label" id="c-label">C++</p></li>
+                            <li><a id="java-skill" class="skill" href="#" title="Java"></a><p class="skill-label" id="java-label">Java</p></li>
+                            <li><a id="html" href="#" class="skill" title="HTML/CSS"></a><p class="skill-label" id="html-label">HTML</p></li>
+                            <li><a id="javascript" class="skill" href="#" title="JavaScript"></a><p class="skill-label" id="js-label">JS</p></li>
+                            <li><a id="python" class="skill" href="#" title="Python"></a><p class="skill-label" id="python-label">Python</p></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        
+        <!-------------------------------------------------------
+        	PROJECTS
+        --------------------------------------------------------->
         
         <h2 id="projects">Projects</h2>
         
@@ -80,33 +128,54 @@
             </div>
         </div>
         
+        <!-------------------------------------------------------
+        	AWARDS
+        --------------------------------------------------------->
+        
         <h2>Awards</h2>
-        
         <div id="gmAward">
-        	<img src="img/holdingaward.png" />
+            <img src="img/holdingaward.png" />
             <h3>General Motors Praxis Award</h3>
-            <p>"One of the hallmarks of CSE 498 capstone projects is that of praxis, the process of putting theoretical knowledge into practice. Teams apply a wide variety of information technologies to produce solutions to complex problems in areas such as business, engineering, computing, and science. The CSE capstone team that engineers the software system that is the most technically challenging is recognized with the General Motors Praxis Award, which is sponsored by General Motors of Detroit, Michigan." This award was given to my team for the Flight Simulator Suite project, which you can read about above.</p>
+            <p>"One of the hallmarks of Computer Science and Engineering 498 capstone projects is that of praxis, the process of putting theoretical knowledge into practice. Teams apply a wide variety of information technologies to produce solutions to complex problems in areas such as business, engineering, computing, and science. The CSE capstone team that engineers the software system that is the most technically challenging is recognized with the General Motors Praxis Award, which is sponsored by General Motors of Detroit, Michigan." This award was given to my team for the Flight Simulator Suite project, which you can read about above.</p>
         </div>
         
-        <h2 id="skills">C++</h2>
-        <div class="skill">
-        	<img src="img/c-logo.png">
-            <p>C++ is my primary language and the language I have the most experience in. Some of my projects done using C++ include: Flight Simulator Suite, a cel shader, animation application using a timeline and keyframes, and a tile-structured city building game.</p>
+        <!-------------------------------------------------------
+        	EXPERIENCE
+        --------------------------------------------------------->
+        
+        <h2 id="experience">Capstone Experience</h2>
+        <div class="experience">
+            (View this <a href="#projects" id="link-to-flightgear-project">project</a>)
+            <p>The Capstone Experience is a class I took my senior year at Michigan State. One of the responsiblities my team had was communicating with our client at Boeing. Before the project started, we were given a brief description of what our client expected for the project. This was refined more after our team met with each other and the client. Meetings with the client were scheduled every week and became more frequent as the project progressed. Some initial challenges included no experience with the technologies wxPython, ActiveMQ, and the existing software FlightGear. Our first big challenge was getting the open-sourced FlightGear to compile. Even though we had our separate roles, our team realized that everyone had to focus on this problem or we would not complete our project. Our next big challenge was integrating ActiveMQ, another open-sourced software, into FlightGear. This also required knowing how FlightGear ran so we could implement ActiveMQ's message queuing. Our team applied the software development lifecycle to our application and gave presentations at four major checkpoints: planning, alpha, beta, and release.</p>
+            <p>Some of my responsibilities included:</p>
+            <ul>
+                <li>Interacting with client to determine expectations and compromises</li>
+                <li>Downloading and compiling FlightGear</li>
+                <li>Setting up ActiveMQ broker and determining how messages are to be sent</li>
+                <li>Implementing message subsystems within FlightGear</li>
+                <li>Source control</li>
+                <li>Script and editing for video</li>
+            </ul>
         </div>
         
-        <h2>Java</h2>
-        <div class="skill">
-        	<img src="img/java.png">
-            <p>Some projects that I have done using Java: a two player brick stacking game on the android that communicates with a web server and database and a web application using Java EE which allows users to log into the system and clock-in their working hours.</p>
+        <h2>Kuali Internship</h2>
+        <div class="experience">
+            <p>My current internship at Michigan State University is with the IT Services Department. This is a twelve week program. The first ten weeks me and the other interns go through various classes on subjects such as Java, Struts, and Spring. During this ten week period, I developed this personal website as well as collaborated with one other intern to make a web application. This web application is called Clock It. It allows users to log into the system and clock in and clock out as well as view and search for other employees. It also lets admins to log into the system and manage these users by indirectly interacting with a database. Technologies used: HTML, CSS, Javascript, Java, Struts, Spring, Hibernate, Microsoft SQL, Oracle PL/SQL.</p>
+            <p>Some of my responsibilities included:</p>
+            <ul>
+            	<li>Creating this web page!</li>
+                <li>Developing an application that allows users to log into the system and clock in their times.</li>
+            </ul>
         </div>
         
-        <h2>HTML/CSS/Javascript</h2>
-        <div class="skill" id="lastskill">
-        	<img src="img/html.png">
-            <p>Some projects that I have done using HTML, CSS, and Javascript: you're looking at it! I have learned and used HTML and CSS in some of my classes but I wanted to do more so I learned Javascript and this is the product of that learning!</p>
+        <div class="push"></div>
+        
         </div>
         
-        <!--<div id="loadFooter"></div>-->
+        <!-------------------------------------------------------
+        	FOOTER
+        --------------------------------------------------------->
+        
         <footer>
         	<p>Need to contact me? Send me an email at: <a href="mailto:mmarinetti92@gmail.com">mmarinetti92@gmail.com</a></p>
         	<p>Also visit these sites!</p>
