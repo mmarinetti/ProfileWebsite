@@ -1,199 +1,48 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Michael Marinetti</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" type="text/css" href="index.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-        <link rel="stylesheet" type="text/css" href="css/experience.css">
-        <link rel="stylesheet" type="text/css" href="css/skills.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/contentdisplay.js"></script>
-        <script src="js/mobilenavdisplay.js"></script>
-        <script src="js/graph.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <!--<div id="loadHeader"></div>-->
-        
-        <!-------------------------------------------------------
-        	NAVIGATION BARS
-        --------------------------------------------------------->
+	<title>Test</title>
 
-        <ul id="navigationbar">
-        	<li><h1 id="name">Michael Marinetti</h1></li>
-            <li><a class="navtext" href="#welcome">Home</a></li>
-            <li><a class="navtext" href="#skills">Skills</a></li>
-            <li><a class="navtext" href="#projects">Portfolio</a></li>
-            <li><a class="navtext" href="#experience">Experience</a></li>
-            <li><a class="navtext" id="lastNav" href="img/Resume.pdf">Resume</a></li>
-            <li><a id="menu" href="#">Menu</a></li>
-        </ul>
-        
-        <ul id="mobilenavbar">
-        	<li><a class="navtext" href="#welcome">Home</a></li>
-            <li><a class="navtext" href="#skills">Skills</a></li>
-            <li><a class="navtext" href="#projects">Portfolio</a></li>
-            <li><a class="navtext" href="#experience">Experience</a></li>
-            <li><a class="navtext" href="img/Resume.pdf">Resume</a></li>
-        </ul>
-        
-        <div id="container">
-        
-        <!-------------------------------------------------------
-        	WELCOME
-        --------------------------------------------------------->
-        
-        <h2 id="welcome">Welcome to my site!</h2>
-        <div id="welcomecontent">
-            <img id="profilepicture" src="img/profilepic.jpg" alt="My big picture should go here." width="523" height="617" />
-            <p>Hello! My name is Michael Marinetti and I am currently a senior at Michigan State University majoring in Computer Science Engineering. I am also currently working for the MSU IT Department as a summer intern. I have a passion for programming and learning more about my field. Seeing what we can do with today's technology fascinates me and is a big reason why I chose my field of study. I can't wait to see what we will consider normal in the future. Some of my other interests include video gaming and baseball. Go Tigers! Thank you for taking the time to check out my page.</p>
-        </div>
-        
-        <!-------------------------------------------------------
-        	SKILLS
-        --------------------------------------------------------->
-        <h2 id="skills">Skills</h2>
-        <div id="skillscontainer">
-        <table>
-            <tr>
-                <td>
-                <table>
-                    <tr><td><span class="tabletext">Mastered</span></td><td><div class="arrow-right"></div></td></tr>
-                    <tr><td><span class="tabletext">Experienced</span></td><td><div class="arrow-right"></div></td></tr>
-                    <tr><td><span class="tabletext">Kinda Know What I'm Doing</span></td><td><div class="arrow-right"></div></td></tr>
-                    <tr><td><span class="tabletext">Dabbled</span></td><td><div class="arrow-right"></div></td></tr>
-                    <tr><td><span class="tabletext">Unexperienced</span></td><td><div class="arrow-right"></div></td></tr>
-                </table>
-                </td>
-                <td>
-                    <div class="skillsgraphcontainer">
-                        <ul>
-                            <li><a id="c-skill" class="skill" href="#" title="C++"></a><p class="skill-label" id="c-label">C++</p></li>
-                            <li><a id="java-skill" class="skill" href="#" title="Java"></a><p class="skill-label" id="java-label">Java</p></li>
-                            <li><a id="html" href="#" class="skill" title="HTML/CSS"></a><p class="skill-label" id="html-label">HTML</p></li>
-                            <li><a id="javascript" class="skill" href="#" title="JavaScript"></a><p class="skill-label" id="js-label">JS</p></li>
-                            <li><a id="python" class="skill" href="#" title="Python"></a><p class="skill-label" id="python-label">Python</p></li>
-                        </ul>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        </div>
-        
-        <!-------------------------------------------------------
-        	PROJECTS
-        --------------------------------------------------------->
-        
-        <h2 id="projects">Projects</h2>
-        
-        <div id="portfolio">
-        	<img id="flightsimulator" src="img/flightsimulatorsuite.png" />
-        	<img id="spacegame" src="img/spacegame.png" />
-            <img id="celshaded" src="img/cel-shaded-torus.png" />
-        </div>
-        
-        <div id="content">
-        	<div id="flightsimulatorcontent">
-            	<h3>Flight Simulator Suite</h3>
-            	<video id="flightsimvideo" controls>
-                	<source src="video/BoeingPresentationMP4.mp4" />
-                    <source src="video/BoeingPresentationWM.wmv" />
-                </video>
-        		<p><a href="http:www.flightgear.org">FlightGear</a> is an open source cross platform flight simulator. It has been in development for many years and has accumulated many rich features. Some of these features include being able to fly many aircraft, exploring locations around the globe, and experiencing a hyper realistic simulation of aviation. The goal of this project was to build upon FlightGear. We added functionalities including a new wxPython GUI and a message queuing subsystem within FlightGear to communicate with the GUI. The primary challenge of this project was safely adding custom components to a complex piece of existing software. Each part of the project involved a deep understanding of the relevant portions of code. The new GUI was built using wxPython. The reason behind choosing Python is simply because Python is such an easy language to understand and write, thereby making it easier for future developers of this project to build upon what we have created with more ease. The wxPython GUI library was chosen because it is a community favorite and has much support on the web. The message queuing subsystems within FlightGear were implemented using ActiveMQ. ActiveMQ uses a broker to mediate the communication between multiple processes. It also has libraries written in C++ and Python which we used to connect FlightGear and the GUI to the broker. My role in this project was implementing the message producer and consumer subsystems within FlightGear and making sure that FlightGear and the Python GUI would be able to connect to the broker.</p>
+	<meta charset=utf-8 />
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="tabbable">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+				<li><a href="#skills" data-toggle="tab">Skills</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Experience</a></li>
+				<li><a href="#">Resume</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="home">
+					<p>Home</p>
+					<div class="content">
+					<div class="col">
+					  <h2>My Skill</h2>
+					    <ul id="skill">
+					    <li><span class="expand html5"></span><em>HTML 5</em></li>
+					    <li><span class="expand css3"></span><em>CSS 3</em></li>
+					    <li><span class="expand jquery"></span><em>jQuery</em></li>
+					    <li><span class="expand photoshop"></span><em>Photoshop</em></li>
+					    <li><span class="expand dreamweaver"></span><em>Dreamweaver</em></li>
+					    </ul>
+					</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="skills">
+				</div>
 			</div>
-            <div id="spacegamecontent">
-            	<h3>Space Game</h3>
-				<p>This game involves flying in a spaceship through an asteriod field. Your score increases the longer you survive. To survive, avoid hitting the ceiling, floor, and all the asteroids that come your way. Occasionally a power-up(a green square) will spawn. Flying over a power-up will increase your ship's speed while making you invunerable to asteroids. Your speed is increased for the duration but the invunerablility lasts for an additional two seconds. The power-ups do not make you invunerable to the floor and ceiling however. Aquiring the power-up also increases your score multiplier for the duration of the power-up. The game will also keep track of your high score. This game was developed using C#, DirectX, and Visual Studio. View this project on <a href="https://github.com/mmarinetti/HelicopterGame">GitHub</a>.</p>
-            </div>
-            <div id="celshadedcontent">
-            	<h3>Cel Shader</h3>
-            	<p>This application applies the cel-shaded effect to object models. The user can also load their own object files. The application was developed using C++, OpenGL, and Visual Studio. View this project on <a href="https://github.com/mmarinetti/Cel-Shader">GitHub</a>.</p>
-            </div>
-        </div>
-        
-        <!-------------------------------------------------------
-        	AWARDS
-        --------------------------------------------------------->
-        
-        <h2>Awards</h2>
-        <div id="gmAward">
-            <img src="img/holdingaward.png" />
-            <h3>General Motors Praxis Award</h3>
-            <p>"One of the hallmarks of Computer Science and Engineering 498 capstone projects is that of praxis, the process of putting theoretical knowledge into practice. Teams apply a wide variety of information technologies to produce solutions to complex problems in areas such as business, engineering, computing, and science. The CSE capstone team that engineers the software system that is the most technically challenging is recognized with the General Motors Praxis Award, which is sponsored by General Motors of Detroit, Michigan." This award was given to my team for the Flight Simulator Suite project, which you can read about above.</p>
-        </div>
-        
-        <!-------------------------------------------------------
-        	EXPERIENCE
-        --------------------------------------------------------->
-        
-        <h2 id="experience">Capstone Experience</h2>
-        <div class="experience">
-            (View this <a href="#projects" id="link-to-flightgear-project">project</a>)
-            <p>The Capstone Experience is a class I took my senior year at Michigan State. One of the responsiblities my team had was communicating with our client at Boeing. Before the project started, we were given a brief description of what our client expected for the project. This was refined more after our team met with each other and the client. Meetings with the client were scheduled every week and became more frequent as the project progressed. Some initial challenges included no experience with the technologies wxPython, ActiveMQ, and the existing software FlightGear. Our first big challenge was getting the open-sourced FlightGear to compile. Even though we had our separate roles, our team realized that everyone had to focus on this problem or we would not complete our project. Our next big challenge was integrating ActiveMQ, another open-sourced software, into FlightGear. This also required knowing how FlightGear ran so we could implement ActiveMQ's message queuing. Our team applied the software development lifecycle to our application and gave presentations at four major checkpoints: planning, alpha, beta, and release.</p>
-            <p>Some of my responsibilities included:</p>
-            <ul>
-                <li>Interacting with client to determine expectations and compromises</li>
-                <li>Downloading and compiling FlightGear</li>
-                <li>Setting up ActiveMQ broker and determining how messages are to be sent</li>
-                <li>Implementing message subsystems within FlightGear</li>
-                <li>Source control</li>
-                <li>Script and editing for video</li>
-            </ul>
-        </div>
-        
-        <h2>Kuali Internship</h2>
-        <div class="experience">
-            <p>My current internship at Michigan State University is with the IT Services Department. This is a twelve week program. The first ten weeks me and the other interns go through various classes on subjects such as Java, Struts, and Spring. During this ten week period, I developed this personal website as well as collaborated with one other intern to make a web application. This web application is called Clock It. It allows users to log into the system and clock in and clock out as well as view and search for other employees. It also lets admins to log into the system and manage these users by indirectly interacting with a database. Technologies used: HTML, CSS, Javascript, Java, Struts, Spring, Hibernate, Microsoft SQL, Oracle PL/SQL.</p>
-            <p>Some of my responsibilities included:</p>
-            <ul>
-            	<li>Creating this web page!</li>
-                <li>Developing an application that allows users to log into the system and clock in their times.</li>
-            </ul>
-        </div>
-        
-        <div class="push"></div>
-        
-        </div>
-        
-        <!-------------------------------------------------------
-        	FOOTER
-        --------------------------------------------------------->
-        
-        <footer>
-        	<p>Need to contact me? Send me an email at: <a href="mailto:mmarinetti92@gmail.com">mmarinetti92@gmail.com</a></p>
-        	<p>Also visit these sites!</p>
-            <p><a href="https://github.com/mmarinetti/" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/pub/michael-marinetti/98/474/aa7" target="_blank">LinkedIn</a></p>
-        </footer>
-
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-       <!-- <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>-->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--<script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>-->
-    </body>
+		</div>
+		
+	</div> <!-- End .container -->
+	
+</body>
 </html>
