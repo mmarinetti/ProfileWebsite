@@ -1,3 +1,139 @@
+/**************************************************
+    Bootstrap overrides
+**************************************************/
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: transparent;
+    border: none;
+    color: #FFFF19;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+    color: #CCCC14;
+    border: 1px solid #CCCC14;
+}
+
+.nav-tabs > li > a {
+    color: white;
+}
+
+#home .nav > li > a, #skills .nav > li > a {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#home .nav > li > a, #skills .nav > li > a {
+    background-color: transparent;
+}
+
+#home .nav > li > a:focus, #skills .nav > li > a:focus {
+    background-color: transparent;
+}
+
+#home .nav > li > a:hover, #skills .nav > li > a:hover {
+    background-color: transparent;
+}
+
+#home .tab-content, #skills .tab-content {
+    border: 1px solid #FFFF19;
+}
+
+/**************************************************
+    End Bootstrap overrides
+**************************************************/
+.trap-expand {
+    height: 125px;
+}
+
+.trapezoid {
+    display: inline-block;
+}
+
+.trap-text {
+    position: absolute;
+    top: 60px;
+    left: 68px;
+    z-index: 101;
+}
+
+.left-top-trap {
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    width: 0;
+    height: 100px;
+    z-index: 100;
+    border-right: 50px solid #000000;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+}
+
+.left-bot-trap {
+    position : absolute;
+    width    : 0;
+    height   : 100px;
+    z-index  : 99;
+    border-right: 50px solid #FFFF19;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+}
+
+.right-top-trap {
+    position: absolute;
+    top: 25px;
+    left: 118px;
+    width: 0;
+    height: 100px;
+    z-index: 100;
+    border-left: 50px solid #000000;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+}
+
+.right-bot-trap {
+    position : absolute;
+    left: 120px;
+    width    : 0;
+    height   : 100px;
+    z-index  : 99;
+    border-left: 50px solid #FFFF19;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+}
+
+.active > .trap-expand > .trapezoid > .right-top-trap {
+    -webkit-animation: nav-top-trap-expand .25s ease-out;
+}
+
+.active > .trap-expand > .trapezoid > .right-bot-trap {
+    -webkit-animation: nav-bot-trap-expand .25s ease-out;
+}
+
+@-webkit-keyframes nav-top-trap-expand {
+    0% {
+        left: 55px;
+    }
+
+    100% {
+        left: 118px;
+    }
+}
+
+@-webkit-keyframes nav-bot-trap-expand {
+    0% {
+        left: 57px;
+    }
+
+    100% {
+        left: 120px;
+    };
+}
+
 body {
 	background-color: #000000;
 }
@@ -63,18 +199,6 @@ body {
     -webkit-animation: jquery 2s ease-out;
 }
 
-.photoshop {
-    width: 10%;
-    -moz-animation: photoshop 2s ease-out;
-    -webkit-animation: photoshop 2s ease-out;
-}
-
-.dreamweaver {
-    width: 100%;
-    -moz-animation: dreamweaver 2s ease-out;
-    -webkit-animation: dreamweaver 2s ease-out;
-}
-
 @-moz-keyframes html5 {
     0% {
         width: 0px;
@@ -105,25 +229,6 @@ body {
     };
 }
 
-@-moz-keyframes photoshop {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 10%;
-    };
-}
-
-@-moz-keyframes dreamweaver {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 100%;
-    };
-}
 
 @-webkit-keyframes html5 {
     0% {
@@ -152,25 +257,5 @@ body {
 
     100% {
         width: 50%;
-    };
-}
-
-@-webkit-keyframes photoshop {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 10%;
-    };
-}
-
-@-webkit-keyframes dreamweaver {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 100%;
     };
 }

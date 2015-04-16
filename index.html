@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 
 	<title>Test</title>
@@ -13,31 +14,103 @@
 
 	<div class="container">
 
-		<div class="tabbable">
-			<ul class="nav nav-tabs">
+	<div class="col-md-2"></div>
+		<div class="tabbable cold-md-10">
+			<ul class="nav nav-tabs" id="nav"  data-tabs="tabs">
 				<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
 				<li><a href="#skills" data-toggle="tab">Skills</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Experience</a></li>
-				<li><a href="#">Resume</a></li>
+				<li><a href="#portfolio" data-toggle="tab">Portfolio</a></li>
+				<li><a href="#experience" data-toggle="tab">Experience</a></li>
+				<li><a href="#resume" data-toggle="tab">Resume</a></li>
 			</ul>
 			<div class="tab-content">
+				<!---------------------------------------------------------------
+							Home Content
+				---------------------------------------------------------------->
 				<div class="tab-pane active" id="home">
 					<p>Home</p>
-					<div class="content">
-					<div class="col">
-					  <h2>My Skill</h2>
-					    <ul id="skill">
-					    <li><span class="expand html5"></span><em>HTML 5</em></li>
-					    <li><span class="expand css3"></span><em>CSS 3</em></li>
-					    <li><span class="expand jquery"></span><em>jQuery</em></li>
-					    <li><span class="expand photoshop"></span><em>Photoshop</em></li>
-					    <li><span class="expand dreamweaver"></span><em>Dreamweaver</em></li>
-					    </ul>
-					</div>
+					<div class="tabbable">
+						<ul class="nav nav-pills nav-stacked col-md-2" data-tabs="pills" id="home-nav">
+							<li class="active"><a href="#about" data-toggle="pill">
+								<div class="trap-expand">
+									<div class="trapezoid">
+										<div class="left-top-trap"></div>
+										<div class="left-bot-trap"></div>
+									</div>
+									<!--<div class="mid-section"></div>-->
+									<div class="trap-text">About</div>
+									<div class="trapezoid">
+										<div class="right-top-trap"></div>
+										<div class="right-bot-trap"></div>
+									</div>
+								</div>
+							</a></li>
+							<li><a href="#about" data-toggle="pill">
+								<div class="trap-expand">
+									<div class="trapezoid">
+										<div class="left-top-trap"></div>
+										<div class="left-bot-trap"></div>
+									</div>
+									<!--<div class="mid-section"></div>-->
+									<div class="trap-text">About</div>
+									<div class="trapezoid">
+										<div class="right-top-trap"></div>
+										<div class="right-bot-trap"></div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+						<div class="tab-content col-md-10">
+							<div class="tab-pane active" id="about">
+							  <h2>About Me</h2>
+							  <p>Hello! My name is Michael Marinetti and I am currently a software developer at Nexient in Ann Arbor. I went to Michigan State University and majored in Computer Science Engineering. I have a passion for programming and learning more about my field. Seeing what we can do with today's technology fascinates me and is a big reason why I chose my field of study. I can't wait to see what we will consider normal in the future. Some of my other interests include video gaming and baseball. Go Tigers! Thank you for taking the time to check out my page.</p>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!---------------------------------------------------------------
+							Skills Content
+				---------------------------------------------------------------->
 				<div class="tab-pane" id="skills">
+					<p>Skills</p>
+					<div class="tabbable">
+						<ul class="nav nav-pills nav-stacked col-md-2" data-tabs="pills" id="skills-nav">
+							<li class="active"><a href="#front-end" data-toggle="pill">Front End Skills</a></li>
+							<li><a href="#back-end" data-toggle="pill">Back End Skills</a></li>
+						</ul>
+						<div class="tab-content col-md-10">
+							<div class="tab-pane active" id="front-end">
+								<div class="content">
+									<div class="col">
+									  <h2>My Front End Skills</h2>
+									    <ul id="skill">
+										    <li><span class="expand html5"></span><em>HTML 5</em></li>
+										    <li><span class="expand css3"></span><em>CSS 3</em></li>
+										    <li><span class="expand jquery"></span><em>jQuery</em></li>
+									    </ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="back-end">
+								<div class="content">
+									<div class="col">
+									  <h2>My Back End Skills</h2>
+									    <ul id="skill">
+										    <li><span class="expand html5"></span><em>HTML 5</em></li>
+										    <li><span class="expand css3"></span><em>CSS 3</em></li>
+										    <li><span class="expand jquery"></span><em>jQuery</em></li>
+									    </ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="portfolio">
+				</div>
+				<div class="tab-pane" id="experience">
+				</div>
+				<div class="tab-pane" id="resume">
 				</div>
 			</div>
 		</div>
