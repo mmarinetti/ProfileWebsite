@@ -1,10 +1,8 @@
 $(document).ready(function(e) {
     var $root = $('html, body');
-	$('.navtext').click(function() {
-    	$root.animate({
-			scrollTop: $(this.hash).offset().top - 60
-		}, 500);
-		return false;
+	$('.trap-expand').click(function() {
+    	$('.right-top-trap').css("left", "118px");
+    	$('.right-top-trap').css("-webkit-animation", "nav-top-trap-expand", ".25s", "ease-out");
 	});
 	
 	$("#link-to-flightgear-project").click(function(e) {
